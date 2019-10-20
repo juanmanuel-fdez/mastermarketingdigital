@@ -1,0 +1,12 @@
+div#banner header {
+    width: 50%;
+    left: 25%;
+}
+
+section.wide {
+    padding: 1em 2em;
+}
+
+section.item-table{
+    padding: 1em 2em;
+}

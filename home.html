@@ -1,9 +1,224 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8"> 
-	</head>
-	<body>
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Juanma example</title>
+        <!-- Estilos para cargar la fuente que usaremos en el texto -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+        <!-- Estilos necesarios para que funcione correctamente el carrusel -->
+        <link href="./assets/slick/slick.scss" rel="stylesheet" type="text/css"/>
+        <link href="./assets/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+        <!-- Estilos propios de la página -->
+        <link href="./style/main.css" rel="stylesheet" type="text/css">
+        <!-- Estilos propios para la versión mobile-->
+        <link href="./style/mobile.css" rel="stylesheet" type="text/css" media='all and (max-width:600px)'/>
+    </head>
+    <body>
+        <div id="banner">
+            <nav>
+                <a href="/"><figure id="nav-logo">
+                    <img src="./img/logo.png" alt="logo">
+                    <figcaption>Logo</figcaption>
+                </figure></a>
+                <ul>
+                    <li><a href="/" title="Home">Home</a></li><li>
+                        <a href="#about" title="About me section">About</a></li><li>
+                        <a href="#technologies" title="Technologies section">Technologies</a></li><li>
+                        <a href="#skills" title="Professional Skills section">Skills</a></li><li>
+                        <a href="#companies" title="Companies section">Companies</a></li><li>
+                        <a href="#projects" title="Projects section">Projects</a></li><li>
+                        <a href="#contact" title="Contact Me">Contact</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1>Welcome to my website!</h1>
+                <p>I'm Juan Manuel, nice to meet you! You can find my CV as example to my marketing master's students, so I hope you can lear from this pice of code! ;)</p>
+                <a href="#contact" title="Contact Me" class="button">It's ok, but I want to contact you!</a>
+            </header>
+        </div>
+        <main>
+            <section class="wide" id="about">
+                <header><h1 class="center">About Me</h1></header>
+                <p class="center">I'm Juan Manuel Fernández teacher at the <a href="https://www.mastermarketingdigital.com/" title="website for the Digital Marketing Master @ UAB">Digital Marketing Master</a> at <a href="http://www.uab.cat" title="UAB website">Univeritat Autònoma de Barcelona (UAB)</a> and this page is an example for my students. They have to develop in a short time a werbsite with their CVs so you will find my CV on this page. If you look into the code (it's avaiblae in <a href="https://github.com/juanmanuel-fdez/mastermarketingdigital" title="GitHub repository of this website">github</a>) you will find comments (in Spanish) and different ways to make the same visual effect in order to help them whith their assigment. You can find more code samples on the <a href="./examples/" title="more code examples">section examples</a>. </p>
+                <p class="center">If you want more information you can contact me by <a href="http://www.linkedin.com/in/jmfernandez" title="Juan M. LinkedIn profile">LinkedIn</a> or by <a href="http://twitter.com/actaw" title="Juan M. LinkedIn twitter feed">Twitter</a>.</p>
+            </section>
+            <section class="item-table grey" id="technologies">
+                <header><h1>Technologies</h1></header>
+                <ul class="list-to-table">
+                    <li>
+                        <figure>
+                            <img src="./img/html.png" alt="">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/css.png" alt="">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/js.png" alt="">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                            <figure>
+                                <img src="./img/jquery.png" alt="">
+                                <figcaption>jQuery</figcaption>
+                            </figure>
+                        </li>                                            
+                    <li>
+                        <figure>
+                            <img src="./img/java.png" alt="">
+                            <figcaption>Java</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/spring.png" alt="">
+                            <figcaption>Spring</figcaption>
+                        </figure>
+                    </li> 
+                    <li>
+                        <figure>
+                            <img src="./img/docker.png" alt="">
+                            <figcaption>Docker</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/nodejs.png" alt="">
+                            <figcaption>NodeJS</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="grey" id="skills">
+                <div class="left-column">
+                    <header><h1>Professional Skills</h1></header>
+                    <ul class="progress">
+                        <li>Software Eng. 90% <br><progress value="90" max="100"></progress></li>
+                        <li>University teaching. 99% <br><progress value="99" max="100"></progress></li>
+                        <li>Research 75% <br><progress value="99" max="100"></progress></li>
+                        <li>Leadership 70% <br><progress value="70" max="100"></progress></li>
+                        <li>Proactive 100% <br><progress value="100" max="100"></progress></li>
+
+                    </ul>
+                </div>                
+            </section>
+            <section class="item-table green wide no-captions" id="companies">
+                <header><h1>Companies</h1></header>
+                <ul class="list-to-table"> 
+                    <li>
+                        <a href="http://buypower.es/" title="BuyPower website" taget="_blank"><figure>
+                            <img src="./img/buypower.png" alt="">
+                            <figcaption>BuyPower</figcaption>
+                        </figure></a>
+                    </li>
+                    <li>
+                        <a href="https://eurecat.org/" title="Eurecat website" taget="_blank"><figure>
+                            <img src="./img/eurecat.png" alt="">
+                            <figcaption>Eurecat</figcaption>
+                        </figure></a>
+                    </li>
+                    <li>
+                        <a href="https://bdigital.org/" title="BDigital website that currently redirects to Eurecat website" taget="_blank"><figure>
+                            <img src="./img/bdigital.png" alt="">
+                            <figcaption>Barcelona Digital</figcaption></a>
+                        </figure>
+                    </li>
+                    <li>
+                        <a href="https://www.gmv.com/" title="GMV website" taget="_blank"><figure>
+                            <img src="./img/gmv.png" alt="">
+                            <figcaption>GMV</figcaption>
+                        </figure></a>
+                    </li>                                            
+                </ul>
+            </section>
+            <section class="gallery" id="projects">
+                <header><h1>Projects</h1></header>
+                <section class="gallery-item center" id="connecare">
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-text">
+                            <header><h2>CONNECARE</h2></header>
+                            <p>The ambition of the CONNECARE consortium is to co-design, develop, deploy, and evaluate a novel smart, adaptive integrated care system for chronic care management.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="gallery-item center" id="backhome">
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-text">
+                            <header><h2>BackHome</h2></header>
+                            <p>BackHome will provide Assistive Technology (AT) so­lutions to research and develop systems for assisting people with severe disabilities.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="gallery-item center" id="medplan">
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-text">
+                            <header><h2>MedPlan</h2></header>
+                            <p>Medplan tiene la finalidad de ayudar a los pacientes con enfermedades crónicas a tomarse su medicación y servir como una herramienta de comunicación entre el paciente y el personal sanitario mediante un entorno seguro y privado.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="gallery-item center" id="brainable">
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-text">
+                            <header><h2>Brainable</h2></header>
+                            <p>The BrainAble project is about empowering them to mitigate this barriers of the everyday life to which those individuals are confronted.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>            
+            <section class="wide grey" id="contact">
+                <header class="center"><h1>Contact Me</h1></header>
+                <p class="center">Do you think I can help you? Go away and send me a message!</p>
+                <p class="center">(Note: this form is diabled and on submit it will only show a thank you message. If you want to contact me, please use the social media links which you can find on footer)</p>
+                <form method="POST" action="">
+                    <div id="form-first-line">
+                        <label for="name">Your Name</label>
+                        <input type="text" placeholder="Your Name"  name="name" id="name" required>
+                        <label for="email">Your Email</label>
+                        <input type="email" placeholder="Your Email"  name="email" id="email" required>
+                    </div>
+                    
+                    <label for="title">Your Title</label>
+                    <input type="text" placeholder="Your Title" name="title" id="title" required>
+                    <label for="comments">Your Comment</label>
+                    <textarea name="comments" id="comments"></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-left">
+                &copy; <script>document.write(new Date().getFullYear());</script> Juan M. Fernández
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li>
+                        <a href="http://Linkedin.com" title="Linkedin"><figure>
+                            <img src=".//img/linkedin.png" alt="Linkedin">
+                            <figcaption>LinkedIn</figcaption>
+                        </figure></a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com" title="Twitter"><figure>
+                            <img src=".//img/twitter.png" alt="twitter">
+                            <figcaption>Twitter</figcaption>
+                        </figure></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Añadimos la librería de jquery -->
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <!-- Añadimos la librería del carrusel -->
+        <script src="./assets/slick/slick.min.js"></script>
+        <!-- Añadimos el código jquery propio de la web -->
+        <script src="./js/main.js"></script>
+    </body>
 </html>

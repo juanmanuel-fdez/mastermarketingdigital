@@ -1,0 +1,354 @@
+/* Main styles*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body {
+    height:100%;
+    color: #000000;
+}
+body{
+    margin: 0; 
+    font-size: 0.9em;
+}
+
+/* Generic tags */
+figure{
+    margin:0;
+    padding: 0;
+}
+p{
+    color:#808080;
+    line-height: 2em;
+}
+ul{
+    list-style: none;
+    margin:0;
+}
+
+progress{
+    width: 100%;
+    border: none;
+    height: 0.35em;
+    color: #10c9c3;
+}
+
+/* hacks for chrome & firefox for progress */
+progress::-moz-progress-bar { 
+    background-color: #10c9c3; 
+}
+
+progress::-webkit-progress-value { 
+    color: #10c9c3; 
+    background-color: #d8d8d8; 
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#000;
+}
+
+a:active{
+    color: #10c9c3;
+}
+
+a:visited{
+    color:#000;
+}
+/* Generic classes */
+
+.center{
+    text-align: center;
+}
+
+/* banner styles */
+
+div#banner{
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav styles*/
+div#banner nav{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+div#banner nav figure{
+    display: block;
+    padding-left: 0;
+    margin: 0em 2em;
+}
+
+div#banner nav figure img{
+    height: 5em;
+}
+
+div#banner nav figure figcaption{
+    display: none;
+}
+
+div#banner nav ul{
+    display: block;
+    padding-left: 0;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 1.5em 2em;
+}
+
+div#banner nav ul li{
+    display: inline-block;
+    padding-right: 2em;
+}
+
+/* header style*/
+div#banner header{
+    position: relative;
+    width: 38%;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+div#banner header a.button{
+    background-color: #10c9c3;
+    color: #ffffff;
+    padding: 1em 1.75em;
+    border:none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Generic style for Sections */
+section {
+    margin-top: 0em;
+}
+
+section header h1{
+    font-size: 2em;
+}
+
+section.wide{
+    padding: 4em 12em;
+}
+
+section.grey{
+    background-color:#e9e9e9;
+}
+
+section.green{
+    background-color:#10c9c3;
+}
+section.green img{
+    filter: brightness(0) invert(1) !important;
+}
+
+section#skills{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url('../img/skills.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section div.left-column{
+    background-color: #f8f9f9;
+    width: 50%;
+    padding: 4em;
+}
+
+ul.progress li{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+section.item-table{
+    padding: 4em 12em;
+}
+ul.list-to-table{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    padding: 0;
+}
+ul.list-to-table figure{
+    margin-top:1.25em;
+    margin-bottom:1.25em;
+}
+ul.list-to-table img{
+    height: 4em;
+    filter: grayscale(100%);
+}
+ul.list-to-table figcaption{
+    margin-top:1.25em;
+    margin-bottom:1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#808080
+}
+
+section.item-table header{
+    display: none;
+}
+
+section.no-captions figcaption{
+    display:none;
+}
+
+section.gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+section.gallery header{
+    display: none;
+}
+
+section.gallery-item{
+    flex-basis: 25%;
+    padding-top: 25%;
+    position: relative;
+    cursor: pointer;
+}
+
+section.gallery-item header{
+    display: block;
+}
+section.gallery-item header h2{
+    margin: 0;
+}
+
+section.gallery-item div.gallery-item-content{
+    display:none;
+}
+
+section.gallery-item div.gallery-item-content-visible{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+section.gallery-item:nth-child(odd) div{
+    background-color: #e9e9e9;
+}
+
+section.gallery-item:nth-child(even) div{
+    background-color: #d8d8d8;
+}
+
+section.gallery-item#connecare{
+    background: linear-gradient(rgba(233,233,233,.5), rgba(233,233,233,.5)), url('../img/connecare.jpg');
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-position: 50%;
+}
+
+section.gallery-item#backhome{
+    background: linear-gradient(rgba(216,216,216,.5), rgba(216,216,216,.5)), url('../img/backhome.png') ;
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-position: 50%;
+}
+
+section.gallery-item#medplan{
+    background: linear-gradient(rgba(233,233,233,.5), rgba(233,233,233,.5)), url('../img/medplan.png');
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-position: 50%;
+}
+section.gallery-item#brainable{
+    background: linear-gradient(rgba(216,216,216,.5), rgba(216,216,216,.5)), url('../img/brainable.png');
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-position: 50%;
+}
+
+
+section.gallery-item div.gallery-item-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin:0 2em;
+}
+
+section#contact form{
+    width: 60%;
+    margin: auto;
+}
+section#contact form label{
+    display: none;
+}
+
+section#contact form input, section#contact form textarea{
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 0;
+}
+
+section#contact form textarea{
+    font-size: 0.9em;
+}
+
+section#contact form div#form-first-line{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+}
+
+section#contact form input[type=submit]{
+    display:block;
+    margin: auto;
+    width: 25%;
+    background-color: #10c9c3;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+}
+/* Footer */
+
+footer{
+    background-color: #000;
+    color: #f8f9f9;
+    padding: 4em 4em;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+}
+
+footer a{
+    color: #808080;
+}
+
+footer ul{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+footer ul li{
+    display: inline-block;
+    width: 4em;
+}
+footer ul li figure{
+    margin: 0;
+    padding: 0;
+}
+footer ul li img{
+    height: 2em;
+    filter: grayscale(100%);
+}
+
+footer ul figcaption{
+    display: none;
+}
+
+ul.slick-slider{
+    display:block;
+}
