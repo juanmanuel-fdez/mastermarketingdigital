@@ -24,24 +24,6 @@ ul{
     list-style: none;
     margin:0;
 }
-
-progress{
-    width: 100%;
-    border: none;
-    height: 0.35em;
-    color: #10c9c3;
-}
-
-/* hacks for chrome & firefox for progress */
-progress::-moz-progress-bar { 
-    background-color: #10c9c3; 
-}
-
-progress::-webkit-progress-value { 
-    color: #10c9c3; 
-    background-color: #d8d8d8; 
-}
-
 a{
     text-decoration: none;
     font-weight: bold;
@@ -61,8 +43,32 @@ a:visited{
     text-align: center;
 }
 
-/* banner styles */
+/* class to force to fullfil all the height of the screen*/
+.full-page{
+    min-height: 76vh; /*100 - 16 (footer) - 8 (nav) */
+}
 
+/* progress bar css code */
+progress{
+    width: 100%;
+    border: none;
+    height: 0.35em;
+    color: #10c9c3;
+}
+
+/* hacks for chrome & firefox for progress bar*/
+progress::-moz-progress-bar { 
+    background-color: #10c9c3; 
+}
+
+progress::-webkit-progress-value { 
+    color: #10c9c3; 
+    background-color: #d8d8d8; 
+}
+/* end hacks */
+
+
+/* banner styles */
 div#banner{
     height: 100vh;
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url('../img/header.jpg');
@@ -71,26 +77,27 @@ div#banner{
 }
 
 /* nav styles*/
-div#banner nav{
+nav{
     display: grid;
     grid-template-columns: 40% 60%;
+    height: 8vh;
 }
 
-div#banner nav figure{
+nav figure{
     display: block;
     padding-left: 0;
     margin: 0em 2em;
 }
 
-div#banner nav figure img{
+nav figure img{
     height: 5em;
 }
 
-div#banner nav figure figcaption{
+nav figure figcaption{
     display: none;
 }
 
-div#banner nav ul{
+nav ul{
     display: block;
     padding-left: 0;
     text-transform: uppercase;
@@ -98,7 +105,7 @@ div#banner nav ul{
     margin: 1.5em 2em;
 }
 
-div#banner nav ul li{
+nav ul li{
     display: inline-block;
     padding-right: 2em;
 }
@@ -321,6 +328,7 @@ footer{
     display: grid;
     grid-template-columns: 45% 45%;
     grid-column-gap: 10%;
+    height: 16vh;
 }
 
 footer a{
