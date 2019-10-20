@@ -1,0 +1,23 @@
+/* NOTA: he obviado los acentos para evitar problemas de codificacion */
+*{
+	margin: 0; /* eliminamos los margenes de todos los elementos*/
+}
+
+body{
+	display:grid; /* indicamos que los elementos contenidos dentro de body se comportarán conforme a una rejilla */
+	grid-template-columns: 2fr 1fr 3fr; /* indicamos que la primera columna ocupara el doble del tamaño minimo de una columna, la segunda columna ocupara el mínimo espacio y la tercera el triple de espacio */
+}
+div#primerdiv{
+	background-color:red; /* color de fondo rojo para la primera columna */
+	height:1300px; /* hacemos crecer la altura de manera artificial para que se vea mejor el efecto */
+}
+
+div#segundodiv{
+	background-color: black; /* color de fondo negro para la segunda columna */
+	color: white; /* color de texto en blanco */
+}
+
+div#tercerdiv{
+	background-color:grey; /* color de fondo gris para la tercera columna */
+	color:white; /* color de texto en blanco */
+}

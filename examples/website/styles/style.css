@@ -1,0 +1,104 @@
+*{
+	font-family:arial;
+}
+
+body{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+li{
+	list-style: none outside none;
+}
+
+header#top img{
+	height:150px;
+}
+header#top figure, header#top h1{
+	display: inline-block;
+}
+
+nav{
+	clear:both;
+}
+
+nav{
+    border-bottom-color: #808080;
+    border-bottom-style: solid;
+    border-top-color: #808080;
+    border-top-style: solid;	
+	border-width:1px;
+}
+
+
+nav header {
+    display: none;
+}
+
+nav ul{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+nav ul li{
+	display:inline-block;
+	width:24%;
+	margin:0;
+}
+
+div#left{
+	float:left;
+	width:25%;
+}
+
+div#left aside h1 {
+	font-size: 1em;
+}
+
+article{
+	float:right;
+	width:75%;
+}
+
+article section h1{
+	font-size: 1.5em;
+}
+
+article section h2{
+	font-size: 1.25em;
+}
+
+article section figure{
+	display:inline-block;
+}
+
+footer{
+	clear:both;
+}
+
+/*Código para las miniaturas*/
+html body section#galeria ul li{
+	display: inline;
+    list-style-image: none;
+	margin:10px;
+}
+html body section#galeria ul li img{
+	cursor:pointer;
+	width:133px;
+	height:100px;
+}
+/*Código para los divs que muestran las imagenes*/
+html body section#galeria  div.imagen{
+	width:266px;
+	height:200px;
+}
+html body section#galeria  div#fotoGrande1{
+	background-image:url('../img/foto1.jpg');
+}
+html body section#galeria  div#fotoGrande2{
+	background-image:url('../img/foto2.jpg');
+}
+html body section#galeria  div#fotoGrande3{
+	background-image:url('../img/foto3.jpg');
+}
+

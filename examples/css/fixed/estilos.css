@@ -1,0 +1,17 @@
+/* NOTA: he obviado los acentos para evitar problemas de codificacion */
+body{
+	margin: 0; /* eliminamos los margenes del body*/
+	padding: 0 0 0 25%;  /* hacemos que el body tenga un relleno del 25% a la izq. eSto hace que todo el cuerpo se desplace hacia la izq.*/
+}
+div#menu{
+	background-color: #333333; /* color de fondo */
+	color: #FFFFFF; /* color del texto blanco */
+	
+	position: fixed; /* al hacer el elemento fijo estara siempre visible independientemente del movimiento del scroll ya que esta referenciado a la ventana */
+	left: 0; /* al trabajar con position fixed podemos decirle exactamente la distancia que queremos que tena el elemento respecto al borde izq de la ventana. De esta manera se situa sobre el padding que hemos definido anteriormente*/
+	width: 25%; /* le damos el mismo ancho que el relleno que hemos puesto en el body*/
+}			
+div#contenido{
+	background-color: #FF0000; /* color de fondo */
+	min-height: 1300px; /* alto de ejemplo para que se vea el efecto. No es necesario para que el estilo funcione */
+}

@@ -1,0 +1,23 @@
+/* NOTA: he obviado los acentos para evitar problemas de codificacion */
+*{
+	margin: 0; /* eliminamos los margenes de todos los elementos*/
+}
+
+body{
+	display:flex; /* indicamos que todo el contenido de body será flexible */
+	justify-content: space-between; /* indicamos que las columnas interiores se deberán ajustar al contenido y se dejara el espacio restante repartido entre las columnas */
+}
+div#primerdiv{
+	background-color:red; /* color de fondo rojo para la primera columna */
+	height:1300px; /* hacemos crecer la altura de manera artificial para que se vea mejor el efecto */
+}
+
+div#segundodiv{
+	background-color: black; /* color de fondo negro para la segunda columna */
+	color: white; /* color de texto en blanco */
+}
+
+div#tercerdiv{
+	background-color:grey; /* color de fondo gris para la tercera columna */
+	color:white; /* color de texto en blanco */
+}

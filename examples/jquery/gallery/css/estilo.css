@@ -1,0 +1,30 @@
+li{
+	list-style: none;
+	display: inline;
+}
+
+ul#botones li img{
+	width:100px;
+	cursor: pointer;
+}
+
+
+li.imgOculta{
+	display:none;
+}
+
+ul#carrusel{
+	border: 1px solid grey;
+}
+
+ul#carrusel li:first-child, ul#carrusel li:last-child{
+	display:none;
+}
+
+ul#botonesNavegacion img{
+	width:100px;	
+}
+
+ul#botonesNavegacion li:first-child img{
+	transform: rotate(180deg);
+}

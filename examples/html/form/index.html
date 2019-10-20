@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo formulario</title>
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+		<form action="./php/envio.php" method="POST">
+			<label for="user">Usuario:</label>
+			<input type="text" name="user" id="user"><br>
+			<p>Sexo:</p>
+			<input type="radio" name="sexo" value="M" id="female"> <label for="female">Mujer</label>
+			<input type="radio" name="sexo" value="H" id="male"> <label for="male">Hombre</label>
+			<br>
+			<label for="notas">Notas: </label>
+			<select name="nota" id="notas" >
+				<option value="10">10</option>
+				<option value="5">5</option>
+				<option value="0">0</option>
+			</select>
+			<input type="submit" value="enviar">
+		</form>
+	</body>
+</html>

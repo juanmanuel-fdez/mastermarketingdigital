@@ -1,0 +1,22 @@
+/* NOTA: he obviado los acentos para evitar problemas de codificacion */
+*{
+	margin: 0; /* eliminamos los margenes de todos los elementos*/
+}
+
+div#primerdiv{
+	background-color:red; /* indicamos que el color de fondo sea rojo */
+	height:1300px; /* hamos crecer artifialmente el div para que se vea mejor el efecto */
+	width:50%; /* el div ocupa el 50% del ancho del navegador */
+}
+
+div#segundodiv{
+	background-color: black; /* indicamos que el color de fondo sea negro */
+	color: white; /* indicamosque el color de primer plano sea blanco */
+	width: 40%; /* el ancho del div sera el 40% del ancho del navegador */
+	
+	/******************************************************************/
+	/* estilos de posicionamiento */
+	position: relative; /* indicamos que tiene un posicionamiento relativo al elemento anterior */
+	top: 100px; /* desplazamos 100px desde el final del elemento anterior */
+	left: 1000px; /* desplazmoa 1000px desde la parte izquierda del elemento anterior */
+}

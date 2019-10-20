@@ -1,0 +1,24 @@
+/* NOTA: he obviado los acentos para evitar problemas de codificacion */
+body{
+	margin: 0; /* eliminamos los margenes del body*/
+	
+	/* Al tener dos elementos flotantes dentro del div, cuando uno de ellos no ocupe todo el espacio se vera el color de fondo del body. Si queremos que se vea el mismo color del div menu descomentar la siguiente regla */
+	/*background-color: #333333; */
+}
+div#menu{
+	background-color: #333333;
+	color: #FFFFFF;
+	float:left; /* Hacemos que el div flote hacia la izquierda. El resto del contenido se distribuira a su alrededor */
+	width: 25%; /* le damos el mismo ancho que el relleno que hemos puesto en el body*/
+}			
+div#contenido{
+	background-color: #FF0000;
+	float:right; /* hacemos que el div flote a la derecha para que siempre quede al lado derecho de la pantalla*/
+	min-height: 1300px; /* alto de ejemplo para que se vea el efecto. No es necesario para que el estilo funcione */
+	width: 50%; /* le indicamos cual sera el ancho del div para que no deje espacio con el div que flota a la izq en caso de que el contenido sea más pequeño */
+}
+
+div#otrodiv{
+	background-color: #00ffff;
+	clear:both; /* eliminamos el efecto del flotante a partir de este div */
+}

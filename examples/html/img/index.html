@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo img</title>
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+		<h1>Cómo insertar imágenes en html</h1>
+		<h2>Tag img con imagen en servidor própio</h2>
+		<img src="./img/http.jpg" alt="Barra de dirección del navegador con el texto http">
+
+		<h2>Tag img con imagen en servidor externo</h2>
+		<img src="http://www.google.es/intl/en_com/images/logo_plain.png" alt="logotipo de Google">
+		
+		<h2>Tag figure</h2>
+		<figure>
+			<img src="./img/http.jpg" alt="Barra de dirección del navegador con el texto http">
+			<figcaption>La importancia del protocolo HTTP en la era digital.</figcaption>
+		</figure>
+
+		<h2>Tag picture</h2>
+		<picture>
+			<source media="(min-width: 650px)" srcset="./img/http.jpg">
+			<img src="./img/http_lite.jpg" alt="Barra de dirección del navegador con el texto http">
+		</picture>
+
+		<h2>Tag canvas</h2>
+		<canvas id="myCanvas"></canvas>
+		<script>
+			var canvas = document.getElementById ("myCanvas");
+			var context = canvas.getContext("2d");
+			context.fillRect(10, 20, 200, 100);// x = 10, y = 20, width = 200, height = 100
+		</script>
+
+	</body>
+</html>

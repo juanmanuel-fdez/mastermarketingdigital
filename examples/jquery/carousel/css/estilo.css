@@ -1,0 +1,19 @@
+li{
+	list-style: none;
+	display: inline;
+}
+
+/* hacemos que el botçon de la izquerda apunte hacia la izquierda aunque la imagen apunte a la derecha rotando mediante css */
+ul#botonesNavegacion li:first-child img{
+	transform: rotate(180deg);
+}
+
+/* la primera y la última imágen no se muestran dejando solamente visible la segunda */
+ul#carrusel li:first-child, ul#carrusel li:last-child{
+	display:none;
+}
+
+ul#botonesNavegacion img{
+	width:100px;	
+}
+

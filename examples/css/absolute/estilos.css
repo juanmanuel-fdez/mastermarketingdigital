@@ -1,0 +1,28 @@
+/* NOTA: he obviado los acentos para evitar problemas de codificacion */
+*{
+	margin: 0; /* eliminamos los margenes de todos los elementos*/
+}
+
+div#primerdiv{
+	background-color:red; /* Hacemos que el fondo sea de color rojo */
+	height:1300px; /* Hacemos crecer el div artificialmente para que se vea */
+	width:50%; /* Hacemos que el div ocupe el 50% del ancho del navegador*/
+}
+
+
+div#segundodiv{
+	background-color: black; /* color de fondo en gris */
+	color: white; /* color de primer plano en blanco*/
+	width: 40%;	/* Hacemos que el div ocupe el 40% del ancho del navegador*/
+}
+
+div#primerdivinterior{
+	background-color:grey; /* color de fondo en gris */
+	color:white; /* color de primer plano en blanco*/
+	
+	/******************************************************************/
+	/* Codigo de posicionamiento */
+	position: absolute; /* marcamos que es absoluto por lo canto nuestro incio 0,0 esta en el borde superior izquierdo de div@primerdiv ya que es el elemento que lo contiene */
+	top: 100px; /* desplazamos el div 100px desde la parte superior del div contenedor */
+	left: 100px; /* desplazamos el div 100px desde la parte izquierda del div contenedor */
+}
