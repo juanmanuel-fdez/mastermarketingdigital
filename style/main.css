@@ -45,7 +45,7 @@ a:visited{
 
 /* class to force to fullfil all the height of the screen*/
 .full-page{
-    min-height: 76vh; /*100 - 16 (footer) - 8 (nav) */
+    min-height: 51.6vh;
 }
 
 /* progress bar css code */
