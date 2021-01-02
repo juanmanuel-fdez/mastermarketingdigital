@@ -1,0 +1,21 @@
+.padding-top{
+	padding-top:5em;
+}
+.padding-bottom{
+	padding-bottom:5em;
+}
+.padding-left{
+	padding-left:5em;
+}
+.padding-right{
+	padding-right:5em;
+}
+.padding-all{
+	padding-top:5em;
+	padding-bottom:5em;
+	padding-left:5em;
+	padding-right:5em;
+}
+.padding-one-property{
+	padding:5em;
+}

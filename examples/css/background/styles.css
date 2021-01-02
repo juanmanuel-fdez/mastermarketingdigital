@@ -1,0 +1,13 @@
+.bg-color{
+	background-color: #FF00FF;
+}
+
+.bg-image{
+	background-image:url('./img/image.jpg');
+}
+
+.bg-image-advanced{
+	background-image:url('./img/image.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
