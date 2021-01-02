@@ -1,0 +1,21 @@
+.margin-top{
+	margin-top:5em;
+}
+.margin-bottom{
+	margin-bottom:5em;
+}
+.margin-left{
+	margin-left:5em;
+}
+.margin-right{
+	margin-right:5em;
+}
+.margin-all{
+	margin-top:5em;
+	margin-bottom:5em;
+	margin-left:5em;
+	margin-right:5em;
+}
+.margin-one-property{
+	margin:5em;
+}
