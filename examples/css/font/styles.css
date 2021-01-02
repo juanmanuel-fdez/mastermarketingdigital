@@ -1,0 +1,35 @@
+.no-link{
+	cursor: pointer;
+	text-decoration: underline;
+	color:blue;
+}
+
+.link{
+	text-decoration: none;
+	color:black;
+	cursor: text;
+}
+
+.change-color{
+	color:#FFee88;
+}
+
+.change-color-font{
+	font-family: Georgia;
+}
+
+.change-google-font{
+	font-family: 'Audiowide', cursive;
+}
+
+.bold{
+	font-weight: bold;	
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.italic{
+	font-style: italic;
+}
