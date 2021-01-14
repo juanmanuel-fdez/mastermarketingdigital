@@ -8,23 +8,25 @@
 	</head>
 	<body>
 		<header>
-			<div id="barra-superior">
+
+			<nav>
 				<figure id="logo">
-					<a href="./index.html" title="Enlace a la página inicial"><img src="./img/logo.png" alt="Logotipo de la web que representa a los puntos de una red de comunicaciones con el nombre de Juanma"></a>
+					<a href="./index.html" title="Enlace a la página inicial">
+						<img src="./img/logo.png" alt="Logotipo de la web que representa a los puntos de una red de comunicaciones con el nombre de Juanma">
+					</a>
 					<figcaption>Logotipo del sitio</figcaption>
 				</figure>
-				<nav>
-					<header>
-						<h1>Navegación</h1>
-					</header>
-					<ul>
-						<li><a href="./index.html" title="Pagina de incio">Home</a></li>
-						<li><a href="./project.html" title="Pagina de proyecto">Proyecto</a></li>
-						<li><a href="./gallery.html" title="Pagina con un ejemplo de galería">Galería</a></li>
-						<li><a href="./contact.html" title="Pagina de contacto" class="selected">Contacto</a></li>
-					</ul>
-				</nav>
-			</div>
+
+				<header>
+					<h1>Navegación</h1>
+				</header>
+				<ul>
+					<li><a href="./index.html" title="Pagina de incio">Home</a></li>
+					<li><a href="./project.html" title="Pagina de proyecto">Proyecto</a></li>
+					<li><a href="./gallery.html" title="Pagina con un ejemplo de galería">Galería</a></li>
+					<li><a href="./contact.html" title="Pagina de contacto" class="highlighted">Contacto</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main id="contacto" class="bloque-contenido contenido-principal">
 			<article>
@@ -32,7 +34,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula urna eu velit eleifend, vel fermentum leo interdum. Fusce scelerisque lectus ac ante lobortis, quis mattis tellus ultricies. Suspendisse dignissim nisl eget blandit porta. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 				<p>Sed non neque ut nibh cursus dictum non ut elit. Praesent sagittis ipsum sed laoreet tempus. Morbi risus nisi, porttitor vel augue quis, efficitur finibus enim.</p>
 			</article>
-			<form action="" method="post">
+			<form action="./php/envio.php" method="post">
 				<div id="columnas-formulario">
 					<label for="nombre">Tu nombre</label>
 					<input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
