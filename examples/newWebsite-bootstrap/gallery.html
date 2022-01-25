@@ -2,30 +2,32 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Master on Digital Marketing teacher example</title>
+		<link href="./style/bootstrap.min.css" rel="stylesheet">
 		<!-- Estilos propios de la página -->
         <link href="./style/main.css" rel="stylesheet" type="text/css">
+		<script src="./js/bootstrap.bundle.min.js"></script>
 	</head>
-	<body>
+	<body class="container-fluid">
 		<header>
-
-			<nav>
-				<figure id="logo">
+			<nav class="row align-middle">
+				<figure id="logo" class="col-3">
 					<a href="./index.html" title="Enlace a la página inicial">
 						<img src="./img/logo.png" alt="Logotipo de la web que representa a los puntos de una red de comunicaciones con el nombre de Juanma">
 					</a>
-					<figcaption>Logotipo del sitio</figcaption>
+					<figcaption class="visually-hidden">Logotipo del sitio</figcaption>
 				</figure>
 
-				<header>
+				<header class="visually-hidden">
 					<h1>Navegación</h1>
 				</header>
-				<ul>
-					<li><a href="./index.html" title="Pagina de incio">Home</a></li>
-					<li><a href="./project.html" title="Pagina de proyecto">Proyecto</a></li>
-					<li><a href="./gallery.html" title="Pagina con un ejemplo de galería" class="highlighted">Galería</a></li>
-					<li><a href="./contact.html" title="Pagina de contacto">Contacto</a></li>
-				</ul>
+				<ul class="col-9 list-inline d-flex align-items-center justify-content-end">
+					<li class="list-inline-item"><a href="./index.html" title="Pagina de incio">Home</a></li>
+					<li class="list-inline-item"><a href="./project.html" title="Pagina de proyecto">Proyecto</a></li>
+					<li class="list-inline-item"><a href="./gallery.html" title="Pagina con un ejemplo de galería" class="highlighted">Galería</a></li>
+					<li class="list-inline-item"><a href="./contact.html" title="Pagina de contacto">Contacto</a></li>
+				</ul>				
 			</nav>
 		</header>
 		<main id="galeria" class="bloque-contenido contenido-principal">
@@ -37,99 +39,44 @@
 				</header>
 				<section>
 					<header>
-						<h1>Imágenes con texto</h1>
+						<h1>Galería</h1>
 					</header>
-					<ul id="gallery" class="galeria"><li>
-						<figure>
-							<img src="./img/foto1.jpg" alt="" id="foto1">
-							<figcaption><span>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-						</figure>
-					</li><li>
-						<figure>
-							<img src="./img/foto2.jpg" alt="" id="foto2">
-							<figcaption><span>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-						</figure>
-					</li><li>
-						<figure>
-							<img src="./img/foto3.jpg" alt="" id="foto3">
-							<figcaption><span>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-						</figure>
-					</li><li>
-						<figure>
-							<img src="./img/foto4.jpg" alt="" id="foto4">
-							<figcaption><span>4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-						</figure>
-					</li></ul>
-				</section>
-				<section>
-					<header>
-						<h1>Galería clásica</h1>
-					</header>
-					<div  id="second-gallery">
-						<ul id="gallery2" class="galeria"><li>
-							<figure>
-								<img src="./img/foto1.jpg" alt="" id="foto1">
+					<div id="second-gallery" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<figure class="carousel-item active">
+								<img class="d-block w-100" src="./img/foto1.jpg" alt="" id="foto1">
 								<figcaption><span>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
 							</figure>
-						</li><li>
-							<figure>
+							<figure class="carousel-item">
 								<img src="./img/foto2.jpg" alt="" id="foto2">
 								<figcaption><span>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
 							</figure>
-						</li><li>
-							<figure>
+							<figure class="carousel-item">
 								<img src="./img/foto3.jpg" alt="" id="foto3">
 								<figcaption><span>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
 							</figure>
-						</li><li>
-							<figure>
+							<figure class="carousel-item">
 								<img src="./img/foto4.jpg" alt="" id="foto4">
 								<figcaption><span>4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
 							</figure>
-						</li></ul>
-
-						
-						<ul id="gallery-big-pictures"  class="galeria"><li>
-							<figure>
-								<img src="./img/foto1.jpg" alt="" id="foto1_g" class="foto-grande">
-								<figcaption><span>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-							</figure>
-						</li><li>
-							<figure>
-								<img src="./img/foto2.jpg" alt="" id="foto2_g" class="foto-grande">
-								<figcaption><span>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-							</figure>
-						</li><li>
-							<figure>
-								<img src="./img/foto3.jpg" alt="" id="foto3_g" class="foto-grande">
-								<figcaption><span>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-							</figure>
-						</li><li>
-							<figure>
-								<img src="./img/foto4.jpg" alt="" id="foto4_g" class="foto-grande">
-								<figcaption><span>4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></figcaption>
-							</figure>
-						</li></ul>
-					</div>					
-				</section>
-				
-			</article>
-			
+						</div>
+					</div>
+				</section>				
+			</article>			
 		</main>
-		<footer>
-			<p><span class="negrita">Juanma</span><br>&copy; 2019</p>
-			<address>
+		<footer class="row py-4">
+			<div class="col-3 offset-md-2 offset-sm-1">
+				<p><span class="negrita">Juanma</span><br>&copy; 2021</p>
+			</div>	
+			<address  class="col-md-4 col-sm-5">
 				<a href="mailto:juanmanuel.fdez@outlook.com">juanmanuel.fdez@outlook.com</a><br>
 				<a href="tel:+13115552368">(311) 555-2368</a>
 			</address>
-			<ul id="rrss">
+			<ul id="rrss" class="col-3 list-unstyled">
 				<li><a href="http://www.facebook.com">Facebook</a></li>
 				<li><a href="http://www.twitter.com">Twitter</a></li>
 				<li><a href="http://www.linkedin.com">LinkedIn</a></li>
 			</ul>
-			
 		</footer>
-		<script src="./js/jquery-3.4.1.min.js" ></script>
-		<script src="./js/main.js" ></script>
 	</body>
 </html>  
