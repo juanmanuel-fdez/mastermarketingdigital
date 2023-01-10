@@ -6,7 +6,7 @@ Este repositorio contiene todos los ejemplos necesarios para poder realizar el e
 * jquery: ejemplos de uso básico de jquery
 * website: ejemplo de una práctica completa a modo de guía para estudiantes
 
-Todos los ejemplos se pueden encontrar funcionando online en https://mastermarketingdigital.herokuapp.com/
+Todos los ejemplos se pueden encontrar funcionando online en https://www.mastermarketingdigital.com/2023/ejemplos/
 
 ## Notas
 Estos ejemplos están desplegados en Heroku como proyecto de PHP ya que contienen unos pocos scripts para mostrar funcionalidades de envío de cuestionarios, por esa razón hay que tener en cuenta:
